@@ -1,0 +1,132 @@
+*{
+
+}
+body,ul,li,a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+hr{
+    margin: 0;
+    
+}
+.divbox,img{
+    align-items: center;
+    justify-content: center;
+} 
+
+.divbox:hover{
+    transform: scale(1.14);
+    transition: transform 0.4s ease;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.322);
+    transition: background-color 0.2s ease-in;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 50px;
+    width: 100%; 
+    z-index: 1000;
+    /* position: absolute; */
+    box-sizing: border-box; 
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    
+}
+.list a{
+    margin-left: 40px;
+    color: white;
+    transition: color 0.3s ease; 
+}
+.list a:hover{
+    color: rgb(255, 77, 0);
+}
+
+@media(max-width: 480px) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        display: inline-flex;
+        font-size: x-small;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        position: fixed;
+        
+    }
+    .navbar .menu .list,a{
+        color: rgb(179, 255, 0);
+        font-size: 0.9rem;
+    }
+    .navbar .menu,h1{
+        gap: 2px;
+        flex-direction: column;
+    }
+    .navbar,h1{
+        font-size: 2px;
+        margin-bottom: 10px;
+    }
+    .Class3{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
+.Class1{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.Class2{
+    border-radius: 20px;
+    justify-content: space-around;
+    height: 35px;
+    width: 10%;
+    color: darkblue;
+    font-size: 1.0rem;
+    border: transparent;
+    background-color: transparent;
+    transition: background-color 0.3s ease, transform 0.5s ease;
+
+    
+}
+.Class2:hover{
+    background-color:rgb(255, 183, 0);
+    color: white;
+    transform: scale(1.1);
+}
+
+.class3{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.overlay-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    color: white; 
+    font-size: 18px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /* background: rgba(39, 25, 25, 0.5);  */
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
